@@ -1,8 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import TicTacToe from "./TicTacToe";
+import "papercss/dist/paper.min.css";
+//import './App.css';
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,5 +24,22 @@ function App() {
     </div>
   );
 }
+*/
 
-export default App;
+export default function App () {
+  return (
+    <Main>
+      <TicTacToe/>
+    </Main>
+  );
+}
+
+const Main = styled.main`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+
+//export default App;
